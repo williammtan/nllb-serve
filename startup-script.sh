@@ -29,7 +29,7 @@ tmux new-session -d -s nllb
 tmux split-window -h
 
 # Run command1 in the first pane (left pane)
-tmux send-keys -t nllb:0.0 'source env/bin/activate && nllb-serve -mi ${model}' C-m
+tmux send-keys -t nllb:0.0 "source env/bin/activate && nllb-serve -mi ${model}" C-m
 
 echo -n Edge:
 read -s edge
