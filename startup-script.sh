@@ -35,6 +35,6 @@ echo -n Edge:
 read -s edge
 
 # Run command2 in the second pane (right pane)
-tmux send-keys -t nllb:0.1 'ngrok tunnel --label edge=${edge} http://localhost:6060' C-m
+tmux send-keys -t nllb:0.1 "ngrok tunnel --label edge=${edge} http://localhost:6060" C-m
 
 
